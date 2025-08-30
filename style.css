@@ -1,0 +1,448 @@
+html{
+    scroll-behavior: smooth;
+
+}
+
+
+
+/* --- BODY --- */
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- NAVIGATION --- */
+nav {
+    background-color: rgba(127, 1, 1, 0.936);
+    padding: 5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 15px;
+}
+
+nav ul li a {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+nav img {
+    width: 120px;
+    height: 80px;
+    margin-right: 600px;
+}
+
+/* --- HERO SECTION --- */
+.herosection {
+    position: relative;
+    width: 100%;
+    height: 760px; /* height of your slides */
+    overflow: hidden;
+}
+
+/* Slide styling */
+.slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    opacity: 0;
+    animation: fade 15s infinite;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide1 {
+    background-image: url("images/banner1.jpg");
+    animation-delay: 0s;
+}
+.slide2 {
+    background-image: url("images/banner2.jpg");
+    animation-delay: 5s;
+}
+.slide3 {
+    background-image: url("images/banner3.jpg");
+    animation-delay: 10s;
+}
+
+@keyframes fade {
+    0%, 100% { opacity: 0; }
+    10%, 30% { opacity: 1; }
+    40%, 99% { opacity: 0; }
+}
+
+.herosection-text{ 
+    color: black; 
+    font-size: 25px; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-weight: bold; 
+    text-align: left; 
+    padding: 5px; 
+    margin-right: 200px; 
+    margin-bottom: 400px; } 
+.herosection-text1{ 
+    color: black; 
+    font-size: 25px; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-weight: bold; 
+    text-align: left; 
+    padding: 5px; 
+    margin-right: 200px; 
+    margin-bottom: 500px; } 
+.herosection-text2{ 
+    color: black; 
+    font-size: 25px; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-weight: bold; 
+    text-align: left; 
+    padding: 5px; 
+    margin-right: 400px; 
+    margin-bottom: 470px; }
+
+/* --- CREATOR SECTION --- */
+.creator-section {
+    position: relative;
+    width: 100%;
+    margin-top: 0; /* no extra padding needed */
+    z-index: 1;
+    padding: 50px 0; /* optional spacing */
+}
+
+.creator-section h2 {
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: rgba(127, 1, 1, 0.936);
+    text-align: center;
+    text-decoration: underline;
+}
+
+.creator-text h3 {
+    color: rgb(135, 135, 135);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 25px;
+}
+
+.creator-text p {
+    color: black;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+/* Creator blocks */
+.creator-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Creator image container */
+.creator-image {
+    margin-left: -8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-position: center;
+}
+.features-section{
+    padding-bottom: 20px; 
+    z-index: 1;
+    position:relative;
+    margin-top: 5px;
+    
+    
+
+}
+.features-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.features-card{
+    background-color: rgb(127, 1, 1, 0.936);
+    padding: 20px;
+    width: 250px;
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+}
+.features-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 5px 15px 15px rgba(66, 1, 1, 0.936);
+}
+.features-section h2{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: underline;
+    font-weight: bolder;
+    color: rgb(127, 1, 1, 0.936);
+    text-align: center;
+    text-decoration: underline;
+}
+.features-card h3{
+    color: rgb(135, 135, 135);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 25px;
+}
+.features-card .icon{
+    font-size: 75px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.features-card p{
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    text-align: center;
+}
+.contact-section{
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+.contactus-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.contactus-info{
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+}
+.contact-complete h2{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: underline;
+    font-weight: bolder;
+    color: rgb(127, 1, 1, 0.936);
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 50px;
+}
+.contact-complete h3{
+    color: rgb(135, 135, 135);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 25px;
+}
+.info-box{
+    display: flex;
+    align-items: left;
+    margin: 20px;
+    background-color: rgb(127, 1, 1, 0.936);
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 15px;
+}
+.info-box:hover{
+    transform: translateY(-5px);
+    box-shadow: 5px 15px 15px rgba(50, 0, 0, 0.936);
+}
+.icon{
+    font-size: 75px;
+    align-items: left;
+    justify-content: left;
+    padding: 10px;
+
+}
+.info-content{
+    align-items: left;
+    padding: 5px;
+    text-align: left;
+}
+.info-content h3{
+    color: rgb(135, 135, 135);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-align: left;
+    font-size: 25px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+}
+.info-content p{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 0px;
+    margin-top: -20px;
+}
+.contact-form{
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: -30px;
+}
+.contact-form h1{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: underline;
+    font-weight: bolder;
+    color: rgba(127, 1, 1, 0.936);
+    text-align: center;
+    
+}
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+
+}
+.contact-form input{
+    background-color: white;
+    padding: 12px;
+    margin-bottom: 15px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 3px solid rgb(135, 135, 135);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.contact-form textarea{
+    background-color: white;
+    padding: 12px;
+    margin-bottom: 15px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 3px solid rgb(135, 135, 135);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: bold;
+    min-height: 100px;
+}
+.contact-form button{
+    background-color: transparent; 
+    color: rgb(135, 135, 135);
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    padding: 15px;
+    border: 5px solid rgb(135, 135, 135);
+    border-radius: 5px;
+    cursor: pointer; 
+}
+.contact-form button:hover{
+    background-color: rgba(127, 1, 1, 0.936);
+    color: rgb(135, 135, 135);
+}
+.map-container{
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+.map-container iframe{    
+    border-radius: 10px ;
+    text-align: center;
+}
+.footer-container{
+    display: grid;
+    gap: 40px;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+}
+.footer-left .social-icon a{
+    display: inline-block;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.footer-left .social-icon a:hover{
+    color:rgba(127, 1, 1, 0.936) ;
+}
+.footer-left h3{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: underline;
+    font-weight: bolder;
+    color: rgb(127, 1, 1, 0.936);
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.footer-left p{
+    color: rgb(135, 135, 135);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-align: left;
+    font-size: 25px;
+}
+.footer-column{
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+.footer-column h2{
+    color: rgb(127, 1, 1, 0.936);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-align: left;
+    font-size: 35px;
+}
+.footer-column ul li a{
+    color: rgb(135, 135, 135);
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: left;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.footer-column ul li{
+    margin-bottom: 10px;
+}
+.footer-column ul li a:hover{
+    color: rgb(87, 87, 87);
+}
+.footer-bottom h2{
+    color: rgb(127, 1, 1, 0.936);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 18px;
+}
