@@ -641,7 +641,6 @@ footer{
         width: 100%;
         min-height: 220px;
     }
-
     /* FOOTER: single column on mobile */
     footer{
         grid-template-columns: 1fr;
